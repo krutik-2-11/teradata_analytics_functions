@@ -1,7 +1,4 @@
--- Switch to val database.
-DATABASE val;
-
--- Create the ADS.
+-- Create a consolidated joined_table from customer, accounts and transactions table
 CREATE TABLE joined_table AS (
     SELECT
         T1.cust_id  AS cust_id
